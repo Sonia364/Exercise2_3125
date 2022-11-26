@@ -8,41 +8,30 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="249dp"
-        android:layout_height="88dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Currency Converter"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="100dp" />
-
-    <Button
-        android:id="@+id/calculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="calculate"
-        android:paddingHorizontal="50dp"
-        android:text="CALCULATE"
-        app:layout_constraintEnd_toEndOf="@id/usdValue"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="@id/usdValue"
-        app:layout_constraintTop_toBottomOf="@id/usdValue" />
+        tools:layout_editor_absoluteY="195dp" />
 
     <EditText
         android:id="@+id/cadValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:gravity="center"
-        android:minHeight="48dp"
         android:hint="CAD Value"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -51,16 +40,29 @@
         android:id="@+id/usdValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center"
-        android:minHeight="48dp"
         android:hint="USD Value"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@id/cadValue"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/cadValue"
         app:layout_constraintTop_toBottomOf="@id/cadValue"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="calculate"
+        android:paddingHorizontal="50dp"
+        android:text="CALCULATE"
+        app:layout_constraintEnd_toEndOf="@id/usdValue"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@id/usdValue"
+        app:layout_constraintTop_toBottomOf="@id/usdValue" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
